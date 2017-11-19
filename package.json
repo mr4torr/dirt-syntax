@@ -2,7 +2,7 @@
   "name": "dirt-syntax",
   "theme": "syntax",
   "version": "0.0.3",
-  "description": "A short description of your syntax theme",
+  "description": "Dirt syntax for theme Dirt UI for GitHub's Atom IDE with adjusted colors",
   "keywords": [
     "atom",
     "dirt",
