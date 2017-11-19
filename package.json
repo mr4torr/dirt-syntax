@@ -1,14 +1,14 @@
 {
-  "name": "atom-dirt-syntax",
+  "name": "dirt-syntax",
   "theme": "syntax",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "A short description of your syntax theme",
   "keywords": [
     "atom",
     "dirt",
     "syntax"
   ],
-  "repository": "https://github.com/mratorr/atom-dirt-syntax",
+  "repository": "https://github.com/mratorr/dirt-syntax",
   "license": "MIT",
   "engines": {
     "atom": ">=1.0.0 <2.0.0"
