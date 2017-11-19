@@ -1,7 +1,7 @@
 {
   "name": "dirt-syntax",
   "theme": "syntax",
-  "version": "0.0.1",
+  "version": "0.0.3",
   "description": "A short description of your syntax theme",
   "keywords": [
     "atom",
