@@ -13,8 +13,7 @@ Or, inside Atom's settings select Install and then search for this package.
 
 Here's the obligatory screenshot.
 
-![](http://i.imgur.com/wzNw9jm.png)
-![](http://i.imgur.com/5jTKg1F.png)
+![](http://i.imgur.com/RXE0DnF.png)
 
 
 ### With [Dirt UI](https://atom.io/packages/dirt-ui)
@@ -22,7 +21,8 @@ Here's the obligatory screenshot.
 ```shell
 apm install dirt-ui
 ```
-![](http://i.imgur.com/RXE0DnF.png)
+![](http://i.imgur.com/wzNw9jm.png)
+![](http://i.imgur.com/5jTKg1F.png)
 
 
 # Contributing
