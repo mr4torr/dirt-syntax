@@ -29,11 +29,11 @@ atom-text-editor {
     .line-number {
       &.cursor-line {
         background-color: @syntax-gutter-background-color-selected;
-        box-shadow: 0 0 0 1px lighten(@syntax-select-border-color, 3%);
         color: @syntax-gutter-text-color-selected;
       }
       &.cursor-line-no-selection {
-        color: @syntax-gutter-text-color-selected;
+        background-color: @syntax-gutter-background-color-selected;
+        box-shadow: 0 0 0 1px lighten(@syntax-select-border-color, 3%);
       }
       &.folded{
         background-color: @syntax-gutter-text-color-colapsed;
@@ -53,9 +53,9 @@ atom-text-editor {
     color: @syntax-text-color;
   }
 
-  .cursor {
-    border-left: 1.5px solid @syntax-cursor-color;
-  }
+  // .cursor {
+  //   border-left: 1.5px solid @syntax-cursor-color;
+  // }
 
   .selection .region {
     background-color: @syntax-selection-color;
