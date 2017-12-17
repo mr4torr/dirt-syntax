@@ -7,9 +7,11 @@
 @background-color: @very-dark-gray;
 @syntax-text-color: @light-gray;
 @syntax-cursor-color: @purple;
-@syntax-selection-color: darken(@very-dark-gray, 3%);
+@syntax-selection-color: lighten(@syntax-select-background-color, 6%);
+// @syntax-selection-color: #45435D;
 @syntax-background-color: @background-color;
 @syntax-select-background-color: @dark-gray;
+// @syntax-select-background-color: lighten(@syntax-select-background-color, 4%);
 @syntax-select-border-color: lighten(@syntax-select-background-color, 4%);
 @syntax-comment-color: @gray;
 // @syntax-selection-flash-color: #00f; // Color the selection is 'flashed' when you run find next
@@ -42,7 +44,8 @@
 
 // For language entity colors
 @syntax-color-variable: @very-light-gray;
-@syntax-color-variable-punctuation: darken(@very-light-gray, 20%);
+@syntax-color-variable: @very-light-gray;
+@syntax-color-variable-punctuation: @yellow;
 @syntax-color-string: @yellow;
 @syntax-color-string-punctuation: @light-gray;
 @syntax-color-numeric: @purple;
@@ -60,3 +63,4 @@
 @syntax-color-import: @green;
 @syntax-color-snippet: @green;
 @syntax-color-character: @purple;
+@syntax-color-source: @very-light-gray;

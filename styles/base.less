@@ -54,7 +54,7 @@ atom-text-editor {
   }
 
   .cursor {
-    border-left: 2px solid @syntax-cursor-color;
+    border-left: 1.5px solid @syntax-cursor-color;
   }
 
   .selection .region {
@@ -62,14 +62,36 @@ atom-text-editor {
   }
 }
 
-
 // Syntax styles
 
 .syntax--comment {
   color: @syntax-comment-color;
 }
 
+.syntax--arguments{
+  // color: @purple;
+  // color: @green;
+  .syntax--delimiter {
+    color: @very-light-gray;
+  }
+}
 
+.syntax--function-call{
+  color: @green;
+  .syntax--meta.syntax--arguments{
+    color: @purple;
+  }
+}
+
+.syntax--variable.syntax--object{
+  color: @purple;
+}
+
+.syntax--method-call{
+  .syntax--meta.syntax--arguments{
+    color: @green;
+  }
+}
 
 .syntax--keyword {
   color: @purple;
@@ -128,7 +150,9 @@ atom-text-editor {
 
 .syntax--variable {
   color: @syntax-color-variable;
-
+  &.syntax--punctuation{
+    color: @syntax-color-variable-punctuation !important;
+  }
   &.syntax--interpolation {
     color: darken(@red, 10%);
   }
@@ -173,12 +197,12 @@ atom-text-editor {
   }
   .syntax--brace,
   .syntax--punctuation {
-    color: @syntax-color-variable-punctuation;
+    color: @syntax-color-source;
   }
 }
 
 .syntax--punctuation {
-  color: @syntax-color-variable-punctuation;
+  color: @syntax-color-source;
   &.syntax--definition {
     &.syntax--string{
       color: @light-gray;
@@ -191,7 +215,7 @@ atom-text-editor {
     &.syntax--variable,
     &.syntax--parameters,
     &.syntax--array {
-      color: @syntax-color-variable-punctuation;
+      color: @syntax-color-source;
     }
 
     // &.syntax--heading,
@@ -363,6 +387,9 @@ atom-text-editor {
     }
 }
 
+.syntax--variable.syntax--property{
+  color: @purple;
+}
 
 
 // CSS
@@ -470,7 +497,7 @@ atom-text-editor {
 
 .syntax--html{
   &.syntax--text{
-    color: @syntax-color-variable;
+    color: @syntax-color-source;
   }
 }
 
@@ -481,5 +508,18 @@ atom-text-editor {
     .syntax--constant{
       color: @purple;
     }
+  }
+}
+
+.syntax--use{
+
+  .syntax--support{
+    color: @very-light-gray;    
+  }
+  .syntax--punctuation{
+    color: @syntax-comment-color;
+  }
+  .syntax--namespace.syntax--use-as{
+    color: @syntax-color-class;
   }
 }
