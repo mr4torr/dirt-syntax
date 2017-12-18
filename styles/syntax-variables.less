@@ -5,14 +5,17 @@
 
 // General colors
 @background-color: @very-dark-gray;
+@background-color: transparent;
 @syntax-text-color: @light-gray;
 // @syntax-cursor-color: @color-primary;
-@syntax-selection-color: lighten(@syntax-select-background-color, 2%);
 // @syntax-selection-color: #45435D;
 @syntax-background-color: @background-color;
-@syntax-select-background-color: @dark-gray;
+// @syntax-select-background-color: @dark-gray;
+@syntax-select-background-color: rgba(255, 255,255, 0.04);
+@syntax-selection-color: lighten(@syntax-select-background-color, 2%);
 // @syntax-select-background-color: lighten(@syntax-select-background-color, 4%);
-@syntax-select-border-color: lighten(@syntax-select-background-color, 4%);
+// @syntax-select-border-color: lighten(@syntax-select-background-color, 4%);
+@syntax-select-border-color: rgba(255, 255,255, 0.1);
 @syntax-comment-color: @gray;
 // @syntax-selection-flash-color: #00f; // Color the selection is 'flashed' when you run find next
 
@@ -31,8 +34,10 @@
 @syntax-gutter-text-color: @syntax-text-color;
 @syntax-gutter-text-color-selected: @very-light-gray;
 @syntax-gutter-text-color-colapsed: @red;
-@syntax-gutter-background-color: @background-color;
-@syntax-gutter-background-color-selected: lighten(@syntax-select-background-color, 2%);
+// @syntax-gutter-background-color: @background-color;
+@syntax-gutter-background-color: transparent;
+// @syntax-gutter-background-color-selected: lighten(@syntax-select-background-color, 2%);
+@syntax-gutter-background-color-selected: rgba(255, 255, 255, 0.06);
 
 // For git diff info. i.e. in the gutter
 @syntax-color-renamed: @blue;

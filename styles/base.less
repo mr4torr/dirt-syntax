@@ -4,9 +4,9 @@ atom-text-editor {
   background-color: @syntax-background-color;
   color: @syntax-text-color;
 
-  // .wrap-guide {
-  //   background-color: @syntax-wrap-guide-color;
-  // }
+  .wrap-guide {
+    background-color: @syntax-wrap-guide-color;
+  }
 
   .indent-guide {
     color: @syntax-indent-guide-color;
@@ -33,7 +33,7 @@ atom-text-editor {
       }
       &.cursor-line-no-selection {
         background-color: @syntax-gutter-background-color-selected;
-        box-shadow: 0 0 0 1px lighten(@syntax-select-border-color, 3%);
+        box-shadow: 0 0 0 1px rgba(255, 255,255, 0.15);
       }
       &.folded{
         background-color: @syntax-gutter-text-color-colapsed;
@@ -58,8 +58,11 @@ atom-text-editor {
   // }
 
   .selection .region {
-    background-color: @syntax-selection-color;
+    // background-color: @syntax-selection-color;
+    background-color: @purple;
+    opacity: 0.1;
   }
+
 }
 
 // Syntax styles
